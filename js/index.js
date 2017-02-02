@@ -1,69 +1,90 @@
 $(document).ready(function(){
-
-// alert("test");
-
-$(".fancy_title").on("click", function(){
-	$(".fancy_title").hide();
-});
+	var innerWindow;
+	var s;
+function checkWindow(){
+	s = $("body").width();
+	innerWindow = s/.90;
+	$('#container').css("width","'"+innerWindow+"'");
+}
+checkWindow();
+	console.log(innerWindow);
+// $(".fancy_title").on("click", function(){
+// 	$('.body')
+// 	$(".fancy_title").hide();
+// });
 
  $(".fancy_title").lettering();
 
  $(".word_split").lettering('words');
+
+ $(".stripes").lettering('words');
 
  $(".line_split").lettering('lines');
 
 var category = ['Coffee','Seattle','Beer','Classic', 'Presidential-Race-2016', ];
 
   for (i = 0; i < category.length; i++) { 
-    $('#submit-btn').append('<option value="' + category[i] + '">' + category[i] + '</option>')
+    $('#submit-btn').append('<option value="' + category[i] + '">' + category[i] + '</option>');
+    $('#submit-btn').css({'position':'relative','left': '0%','right':'0%','top':'-50px','text-align':'center'});
   }
+var clear = function(){
+		$('.poster').fadeOut();
+		$('.stripes').fadeOut();
+	};
+
 
 $('form').on('change',submitCategory);
-
-function submitCategory(){
+var clear;
+function submitCategory(event){
 
 	event.preventDefault();
 
 	currentCategory = $('#submit-btn').val();
 
 		if (currentCategory == 'Coffee'){
-			$('.calmContainer').hide();
-			$('.seattleContainer').hide();
-			$('.beerContainer').hide();
-			$('.classicContainer').hide();
-			$('.Presidential-Race').hide();
-			$('.coffeeContainer').slideToggle();
+			$('#masterContainer').hide('slow');
+			$('.poster').hide('slow');
+			$('.stripes').hide('slow');
+			setTimeout([
+			$('.coffeeContainer').fadeIn('slow'),
+			$('.stripes').fadeIn('slow'),
+			$('#masterContainer').fadeIn('slow')],500);
 		} else if(currentCategory == 'Seattle'){
-			$('.seattleContainer').slideToggle();
-			$('.calmContainer').hide();
-			$('.coffeeContainer').hide();
-			$('.beerContainer').hide();
-			$('.classicContainer').hide();
-			$('.presContainer').hide();
-		}
-		 else if (currentCategory == 'Beer'){
-			$('.seattleContainer').hide();
-			$('.calmContainer').hide();
-			$('.coffeeContainer').hide();
-			$('.classicContainer').hide();
-			$('.presContainer').hide();
-			$('.beerContainer').slideToggle();
+		$('#masterContainer').hide("slow");
+			$('.poster').hide('slow');
+			$('.stripes').hide('slow');
+			setTimeout([
+			$('.seattleContainer').fadeIn('slow'),
+			$('.stripes').fadeIn('slow'),
+			$('#masterContainer').fadeIn('slow')],500);
+
+		} else if (currentCategory == 'Beer'){
+			$('#masterContainer').hide("slow");
+			$('.poster').hide('slow');
+			$('.stripes').hide('slow');
+			setTimeout([
+			$('.beerContainer').fadeIn('slow'),
+			$('.stripes').fadeIn('slow'),
+			$('#masterContainer').fadeIn('slow')],500);
 
 		} else if (currentCategory == 'Classic'){
-			$('.seattleContainer').hide();
-			$('.calmContainer').hide();
-			$('.coffeeContainer').hide();
-			$('.classicContainer').slideToggle();
-			$('.presContainer').hide();
-			$('.beerContainer').hide();
-		}
-		 else if (currentCategory == 'Presidential-Race-2016'){
-			$('.seattleContainer').hide();
-			$('.calmContainer').hide();
-			$('.coffeeContainer').hide();
-			$('.classicContainer').hide();
-			$('.presContainer').slideToggle();
-			$('.beerContainer').hide();
+			$('#masterContainer').hide("slow");
+			$('.poster').hide('slow');
+			$('.stripes').hide('slow');
+			setTimeout([
+			$('.classicContainer').fadeIn('slow'),
+			$('.stripes').fadeIn('slow'),
+			$('#masterContainer').fadeIn('slow')],500);
+
+		} else if (currentCategory == 'Presidential-Race-2016'){
+			$('#masterContainer').hide("slow");
+			$('.poster').hide('slow');
+			$('.stripes').hide('slow');
+			setTimeout([
+			$('.presContainer').fadeIn('slow'),
+			$('.stripes').fadeIn('slow'),
+			$('#masterContainer').fadeIn('slow')],500);
+
 		}
 	}
 
