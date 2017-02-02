@@ -2,7 +2,6 @@ body{
 	background-color: #002244;
 
 }
-
 .hide{
 	display: none;
 }
@@ -135,37 +134,16 @@ body{
     opacity: .3;
     background-color: #add8e6;
 }
-
-
-/*.stripes span[class*="word"]:nth-child(2n){
-  moz-transform: skewY(10deg);
-    -webkit-transform: skewY(10deg);
-    -o-transform: skewY(10deg);
-    -ms-transform: skewY(10deg);
-    transform: skewY(10deg);
-    padding-left: 90%;
-    margin-top: 15px;
-    background-color: #add8e6;
-}*/
 .stripes{
   position: absolute;
   top: 0;
   width: 350px;
 }
-/*.inner{
-  position: absolute;
-  top: 0;
-}*/
 #container{
 	text-align: center;
 	width: 100%;
 }
-
 .calmContainer, .coffeeContainer, .seattleContainer, .classicContainer, .beerContainer, .presContainer{
-	/*position: absolute;
-	width: 100%;
-    top: 50%;
-    left: 19%;*/
 	width: 350px;
   text-align: center;
 	background-color: rgba(255,255,255,.8);
