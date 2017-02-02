@@ -37,37 +37,37 @@ body{
   margin-right: 25%;
 }
 .fancy_title [class*="char"]{
-    font-family: 'Finger Paint', cursive;
-    background: #00cc00;
-    padding: 10px;
-    font-size: 3em;
-    color: #fff;
-    display: inline-block;
-    border-radius: 50%;
-    text-align: center;
-    border: 2px solid rgba(255,255,255,1);
-    box-shadow: 5px 5px rgba(0,0,0,.9);
-    text-shadow: 5px 5px rgba(0,0,0,.9);
+  font-family: 'Finger Paint', cursive;
+  background: #00cc00;
+  padding: 10px;
+  font-size: 3em;
+  color: #fff;
+  display: inline-block;
+  border-radius: 50%;
+  text-align: center;
+  border: 2px solid rgba(255,255,255,1);
+  box-shadow: 5px 5px rgba(0,0,0,.9);
+  text-shadow: 5px 5px rgba(0,0,0,.9);
   }
 
 .fancy_title [class*="char"]:nth-child(odd){
-    moz-transform: skewY(-25deg);
-    -webkit-transform: skewY(-25deg);
-    -o-transform: skewY(-25deg);
-    -ms-transform: skewY(-25deg);
-    transform: skewY(-25deg);
-    font-family: 'Audiowide', cursive;
-  }
+  moz-transform: skewY(-25deg);
+  -webkit-transform: skewY(-25deg);
+  -o-transform: skewY(-25deg);
+  -ms-transform: skewY(-25deg);
+  transform: skewY(-25deg);
+  font-family: 'Audiowide', cursive;
+}
 .fancy_title [class*="char"]:nth-child(even){
-    background: #0066ff;
-    color: #fff;
-    moz-transform: skewY(25deg);
-    -webkit-transform: skewY(25deg);
-    -o-transform: skewY(25deg);
-    -ms-transform: skewY(25deg);
-    transform: skewY(25deg);
-    font-family: 'Fontdiner Swanky', cursive;
-  }
+  background: #0066ff;
+  color: #fff;
+  moz-transform: skewY(25deg);
+  -webkit-transform: skewY(25deg);
+  -o-transform: skewY(25deg);
+  -ms-transform: skewY(25deg);
+  transform: skewY(25deg);
+  font-family: 'Fontdiner Swanky', cursive;
+}
 
 
 
@@ -77,62 +77,62 @@ body{
 
 .word_split span[class*="word"]{
 	moz-transform: skewY(10deg);
-    -webkit-transform: skewY(10deg);
-    -o-transform: skewY(10deg);
-    -ms-transform: skewY(10deg);
-    transform: skewY(10deg);
-    font-family: 'Amatic SC', helvetica;
-    text-transform: uppercase;
-    color: #fff;
-    font-weight: bold;
-    text-decoration: underline;
-    font-size: 20px;
+  -webkit-transform: skewY(10deg);
+  -o-transform: skewY(10deg);
+  -ms-transform: skewY(10deg);
+  transform: skewY(10deg);
+  font-family: 'Amatic SC', helvetica;
+  text-transform: uppercase;
+  color: #fff;
+  font-weight: bold;
+  text-decoration: underline;
+  font-size: 20px;
 	padding: 10px;
-    display: inline-block;
-    max-width: 1500px;
+  display: inline-block;
+  max-width: 1500px;
 }
 
 .word_split span[class*="word"]:nth-child(2n+1){
 	moz-transform: skewY(10deg);
-    -webkit-transform: skewY(10deg);
-    -o-transform: skewY(10deg);
-    -ms-transform: skewY(10deg);
-    transform: skewY(10deg);
-    background: yellow;
-    color: #000;
-    padding-left: 90%;
+  -webkit-transform: skewY(10deg);
+  -o-transform: skewY(10deg);
+  -ms-transform: skewY(10deg);
+  transform: skewY(10deg);
+  background: yellow;
+  color: #000;
+  padding-left: 90%;
 }
 .stripes span[class*="word"]:nth-child(2n+1){
-    -ms-transform: rotate(35deg); /* IE 9 */
-    -webkit-transform: rotate(35deg); /* Chrome, Safari, Opera */
-    transform: rotate(35deg);
-    background: yellow;
-    color: #000;
-    opacity: .3;
-    padding-left: 350px;
-    text-align: right;
+  -ms-transform: rotate(35deg); /* IE 9 */
+  -webkit-transform: rotate(35deg); /* Chrome, Safari, Opera */
+  transform: rotate(35deg);
+  background: yellow;
+  color: #000;
+  opacity: .3;
+  padding-left: 350px;
+  text-align: right;
 }
 
 .word_split span[class*="word"]:nth-child(2n){
 	moz-transform: skewY(10deg);
-    -webkit-transform: skewY(10deg);
-    -o-transform: skewY(10deg);
-    -ms-transform: skewY(10deg);
-    transform: skewY(10deg);
-    width: 100%;
-    text-align: right;
-    background-color: #add8e6;
+  -webkit-transform: skewY(10deg);
+  -o-transform: skewY(10deg);
+  -ms-transform: skewY(10deg);
+  transform: skewY(10deg);
+  width: 100%;
+  text-align: right;
+  background-color: #add8e6;
 }
 .stripes span[class*="word"]:nth-child(2n){
   moz-transform: skewY(10deg);
-    -webkit-transform: skewY(10deg);
-    -o-transform: skewY(10deg);
-    -ms-transform: skewY(10deg);
-    transform: skewY(10deg);
-    padding-left:300px;
-    text-align: right;
-    opacity: .3;
-    background-color: #add8e6;
+  -webkit-transform: skewY(10deg);
+  -o-transform: skewY(10deg);
+  -ms-transform: skewY(10deg);
+  transform: skewY(10deg);
+  padding-left:300px;
+  text-align: right;
+  opacity: .3;
+  background-color: #add8e6;
 }
 .stripes{
   position: absolute;
@@ -167,11 +167,11 @@ body{
 
 #container .line_split .line4{
 	letter-spacing: 15px;
-    line-height: 71px;
-    -webkit-text-stroke-width: 2px;
-    -webkit-text-stroke-color: #000;
-    text-decoration: bold;
-    color: #fff;
+  line-height: 71px;
+  -webkit-text-stroke-width: 2px;
+  -webkit-text-stroke-color: #000;
+  text-decoration: bold;
+  color: #fff;
 	}
 
 .line_split [class*="line"]{
