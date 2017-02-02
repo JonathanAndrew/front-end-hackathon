@@ -37,7 +37,7 @@ $(document).ready(function () {
 		$('.stripes').hide('slow');
 	};
 	var fadePosterIn = function(){
-		$('.classicContainer').fadeIn('slow'),
+		$('#masterContainer').fadeIn('slow'),
 		$('.stripes').fadeIn('slow')
 	}
 
@@ -55,34 +55,34 @@ $(document).ready(function () {
 			clear();
 			setTimeout([
 				fadePosterIn(),
-				$('#masterContainer').fadeIn('slow')
+				$('.coffeeContainer').fadeIn('slow'),
 			], 500);
 		} else if (Category == 'Seattle') {
 			clear();
 			setTimeout([
 				fadePosterIn(),
-				$('#masterContainer').fadeIn('slow')
+				$('.seattleContainer').fadeIn('slow'),
 			], 500);
 
 		} else if (Category == 'Beer') {
 			clear();
 			setTimeout([
 				fadePosterIn(),
-				$('#masterContainer').fadeIn('slow')
+				$('.beerContainer').fadeIn('slow'),			
 			], 500);
 
 		} else if (Category == 'Classic') {
 			clear();
 			setTimeout([
 				fadePosterIn(),
-				$('#masterContainer').fadeIn('slow')
+				$('.classicContainer').fadeIn('slow'),			
 			], 500);
 
 		} else if (Category == 'Presidential-Race-2016') {
 			clear();
 			setTimeout([
 				fadePosterIn(),
-				$('#masterContainer').fadeIn('slow')
+				$('.presContainer').fadeIn('slow'),			
 			], 500);
 
 		}
