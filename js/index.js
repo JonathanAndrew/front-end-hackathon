@@ -32,9 +32,14 @@ $(document).ready(function () {
 		});
 	}
 	var clear = function () {
-		$('.poster').fadeOut();
-		$('.stripes').fadeOut();
+		$('#masterContainer').hide('slow');
+		$('.poster').hide('slow');
+		$('.stripes').hide('slow');
 	};
+	var fadePosterIn = function(){
+		$('.classicContainer').fadeIn('slow'),
+		$('.stripes').fadeIn('slow')
+	}
 
 
 	$('form').on('change', submitCategory);
@@ -44,54 +49,39 @@ $(document).ready(function () {
 
 		event.preventDefault();
 
-		currentCategory = $('#submit-btn').val();
+		Category = $('#submit-btn').val();
 
-		if (currentCategory == 'Coffee') {
-			$('#masterContainer').hide('slow');
-			$('.poster').hide('slow');
-			$('.stripes').hide('slow');
+		if (Category == 'Coffee') {
+			clear();
 			setTimeout([
-				$('.coffeeContainer').fadeIn('slow'),
-				$('.stripes').fadeIn('slow'),
+				fadePosterIn(),
 				$('#masterContainer').fadeIn('slow')
 			], 500);
-		} else if (currentCategory == 'Seattle') {
-			$('#masterContainer').hide("slow");
-			$('.poster').hide('slow');
-			$('.stripes').hide('slow');
+		} else if (Category == 'Seattle') {
+			clear();
 			setTimeout([
-				$('.seattleContainer').fadeIn('slow'),
-				$('.stripes').fadeIn('slow'),
+				fadePosterIn(),
 				$('#masterContainer').fadeIn('slow')
 			], 500);
 
-		} else if (currentCategory == 'Beer') {
-			$('#masterContainer').hide("slow");
-			$('.poster').hide('slow');
-			$('.stripes').hide('slow');
+		} else if (Category == 'Beer') {
+			clear();
 			setTimeout([
-				$('.beerContainer').fadeIn('slow'),
-				$('.stripes').fadeIn('slow'),
+				fadePosterIn(),
 				$('#masterContainer').fadeIn('slow')
 			], 500);
 
-		} else if (currentCategory == 'Classic') {
-			$('#masterContainer').hide("slow");
-			$('.poster').hide('slow');
-			$('.stripes').hide('slow');
+		} else if (Category == 'Classic') {
+			clear();
 			setTimeout([
-				$('.classicContainer').fadeIn('slow'),
-				$('.stripes').fadeIn('slow'),
+				fadePosterIn(),
 				$('#masterContainer').fadeIn('slow')
 			], 500);
 
-		} else if (currentCategory == 'Presidential-Race-2016') {
-			$('#masterContainer').hide("slow");
-			$('.poster').hide('slow');
-			$('.stripes').hide('slow');
+		} else if (Category == 'Presidential-Race-2016') {
+			clear();
 			setTimeout([
-				$('.presContainer').fadeIn('slow'),
-				$('.stripes').fadeIn('slow'),
+				fadePosterIn(),
 				$('#masterContainer').fadeIn('slow')
 			], 500);
 
