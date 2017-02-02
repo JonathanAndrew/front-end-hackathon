@@ -167,11 +167,11 @@ body{
 
 #container .line_split .line4{
 	letter-spacing: 15px;
-  line-height: 71px;
-  -webkit-text-stroke-width: 2px;
-  -webkit-text-stroke-color: #000;
-  text-decoration: bold;
-  color: #fff;
+    line-height: 71px;
+    -webkit-text-stroke-width: 2px;
+    -webkit-text-stroke-color: #000;
+    text-decoration: bold;
+    color: #fff;
 	}
 
 .line_split [class*="line"]{
