@@ -18,11 +18,12 @@
                     <option>Select</option>
                 </select>
             </form>
-            <div width="100%" align="center" id="masterContainer">
+            <div id="masterContainer">
 	            <div class="posterContainer">
-	                <div class="poster calmContainer">
-	                		<div class="inner">
+	                <div id="sideOne" class="poster calmContainer">
+	                		<div class="inner">	                			
 			                	<h2>. . . . . .</h2>
+			                	<img width="100" src="images/crown.png">
 			                    <h1 class="line_split">
 			                        Keep<br>
 			                        Calm<br>
@@ -33,9 +34,10 @@
 	                    	</div>
 	                    	<h1 class="stripes">          </h1>
 	                </div>
-	                <div class="poster coffeeContainer hide">
-	                	<div class="inner">
+	                <div id="coffee"  class="poster coffeeContainer hide active">
+	                	<div class="inner">            		
 		                	<h2>. . . . . .</h2>
+		                	<img width="100" src="images/crown.png">
 		                    <h1 class="line_split">
 		                        Keep<br>
 		                        Calm<br>
@@ -46,22 +48,24 @@
 	                    </div>
 	                    <h1 class="stripes">          </h1>
 	                </div>
-	                <div class="poster seattleContainer hide">
+	                <div id="seattle"  class="poster seattleContainer hide">
 	                	<div class="inner">
 		                	<h2>. . . . . .</h2>
+		                	<img width="100" src="images/crown.png">
 		                    <h1 class="line_split">
 		                        Keep<br>
 		                        Calm<br>
 		                        and<br>
-		                        put on a<br>
-		                        rain coat! 
+		                        Tom<br>
+		                        on!		               
 		                    </h1>
 	                    </div>
 	                    <h1 class="stripes">          </h1>
 	                </div>
-	                <div class="poster classicContainer hide">
-	                	<div class="inner">
+	                <div id="classic" class="poster classicContainer hide">
+	                	<div class="inner">               	
 		                	<h2>. . . . . .</h2>
+		                	<img width="100" src="images/crown.png">
 		                    <h1 class="line_split">
 		                        Keep<br>
 		                        Calm<br>
@@ -73,11 +77,10 @@
 		                </div>
 		                <h1 class="stripes">          </h1>
 	                </div>
-
-
-	                <div class="poster beerContainer hide">
+	                <div id="beer" class="poster beerContainer hide">
 	                	<div class="inner">
 		                	<h2>. . . . . .</h2>
+		                	<img width="100" src="images/crown.png">
 		                    <h1 class="line_split">
 		                        Keep<br>
 		                        hopi<br>
@@ -88,9 +91,10 @@
 		                    </div>
 	                    <h1 class="stripes">          </h1>
 	                </div>
-	                <div class="poster presContainer hide">
+	                <div id="pres" class="poster presContainer hide">
 	                <div class="inner">
 		                	<h2>. . . . . .</h2>
+		                	<img width="100" src="images/crown.png">
 		                    <h1 class="line_split">
 		                        Keep <br>
 		                        Calm <br>
@@ -104,7 +108,13 @@
 	            </div>
             </div>
         </div>
-        <script src="https://code.jquery.com/jquery-1.12.0.min.js"></script>
+        <script type="text/javascript" src="https://code.jquery.com/jquery-2.2.4.min.js"   integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44="   crossorigin="anonymous"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.19.0/TweenMax.min.js"></script>
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
+		<script src="http://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.3/ScrollMagic.js"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.5/plugins/animation.gsap.js"></script>
+		<script src="http://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.5/plugins/debug.addIndicators.min.js"></script>
+
         <script type="text/javascript" src="js/jquery.lettering-0.6.1.min.js"></script>
         <script type="text/javascript" src="js/index.js"></script>
     </body>
